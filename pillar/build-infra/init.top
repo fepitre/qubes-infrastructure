@@ -1,19 +1,11 @@
 base:
   '*':
     - build-infra
-  logs:
-    - build-infra.logs
-  build-fedora1:
+  logs-iso:
+    - build-infra.logs-iso
+  logs-tertiary:
+    - build-infra.logs-tertiary
+  build-iso:
     - build-infra.build-vms
-  build-fedora2:
-    - build-infra.build-vms
-  build-centos1:
-    - build-infra.build-vms
-  build-debian1:
-    - build-infra.build-vms
-  logs-kernel:
-    - build-infra.logs-kernel-repo
-    - build-infra.logs-kernel
-  build-kernel:
-    - build-infra.logs-kernel-repo
+  build-templates-community:
     - build-infra.build-vms

@@ -1,14 +1,90 @@
 build-infra:
-  github_api_key: place API key here for qubesos-bot account
+  github_api_key: place API key here for fepitre-bot account
   mirror_ssh_key: |
     -----BEGIN OPENSSH PRIVATE KEY-----
     ...
     -----END OPENSSH PRIVATE KEY-----
-# public GPG keys for allowing Qubes members to build packages/templates
+  # public GPG keys for allowing Qubes members to build packages/templates:
+  # marmarek (17B7CC1986BD3D28C41475B6846D6B709C6E2E7F)
+  # fepitre (9FA64B92F95E706BF28E2CA6484010B5CDC576E2)
   commands_public_keys: |
     -----BEGIN PGP PUBLIC KEY BLOCK-----
-    ...
+    
+    mQINBFjO1G4BEACnUtvshKN3X/tD/K24Q4VnuIiAHE7HIzgX40I43JjmGR9XLvce
+    jIBWJreYsJKRB7Cnl6YPN/aMsbfK6+ubQ7gC7NTjMRUMzMR2gC1JIYsICjVddcP3
+    bm/3J504Vu0ZE6yfjed2GlyOIFvKvKuR4DpIZm94JJosgkLdnlef4M6O6E9jJDVW
+    FvbREprqnuXw8sMXwuvKbgreqDhWDP6TbbENOSiIze9RaymPYuaepFoB8pj7m1iy
+    66ZNsKmyT40JlP9tB0u9aFZNLP0iVeoZPAX9BrV+gUGB+xdm44hrWeuuxcbK+EV5
+    ae5e2PtF3IFj1dTdOIDBl4TDM0xJmwjkNavb0Ss58Yka4uKNnjoZsmDNEWJUkOdy
+    GvukmUtdRV8KVZFgMn3RaDAxsAofWrVksSB9lpSiSS+VEIKtUmywmQKl8Mju7RvR
+    nN/t+YjURmtkCBQSuUEgOo+hA2igwmgxwJFNpu1A8cDa2Nq5ybDeM8ZFpPPeXoVw
+    GLz9IYVMacBlJfiTEBJlTKQKyYjik1FIdS1+Un78OUoHVVnMOkC8bwLJ5tI0le2y
+    p2zy1R/a3O9JdpTWgi8XRNORSAw95ZPudxj6VUsq0O2GRRXrxG8z8D2BNOjscUY2
+    Sbxgfao6mEhNwqmvuDC9DTce/XvORYpnMIdDrSM6BB7GiOwYuK79y2repwARAQAB
+    tGRNYXJlayBNYXJjenlrb3dza2ktR29yZWNraSAoUXViZXMgT1MgYnVpbGRlciBj
+    b21tYW5kcyBzaWduaW5nIGtleSkgPG1hcm1hcmVrQGludmlzaWJsZXRoaW5nc2xh
+    Yi5jb20+iQI3BBMBCAAhBQJYztmnAhsDBQsJCAcCBhUICQoLAgQWAgMBAh4BAheA
+    AAoJEIRta3Ccbi5/wAAP/inaN982DPh1s+vWPSwfoEaFWzMU+UgP+u6LK699mrFd
+    h/sBV5+6lAiprYvBxkCG5QpK8j83OUA5Hcs7BRaXFOqb4b8/eKGTRcFWfZ1fBayh
+    8ztujuPCOvGixCfEHp6TdrQCa3EyzH7NoWqFAul6Z3O9sa88th9xjLzcgjaJvu/D
+    5DcpFpI/v84TSb8CzXdoeAJ6SqcwXt763B4T6JUFLuI7/cGB4MSfmB3k5hi2sCm2
+    vPX7vJLPPYdsijS7y3U25YqvUrFQybmT7J1W0HNhfGSxZdohiq0TUBdnF/QwKn0b
+    ycHmId8WFBe6HXBQyL6JpMHMYYBi4Nyq/2N2D//bmWwehQCBZCTpEacjkNzuOBIf
+    funYAVWJ9EUM9O6xCDjyPU6BUcOLVriyz//w3zOxoJkvm9G+0Iyi2uLZxaXvjuLw
+    6P3RiYU5k81ycGps39+PShEPWVpbtHsgLyUuVy+i45ZJWY5IGZTX7zOBH8rt0ndW
+    icKZCJ0SN25uRnIzlVBxRmbmvLpOyE74j9ghMIogZpA7n0cUrJDJFV75ECv9pAhb
+    Oa1d5fZgs8aYVPjpRpKs465wRi28q9mk3efj0PD7PzGQcmaZ8G4hJIT7TL0X0QJQ
+    sKlaFEuoX6f/eDbFKsAzxN2LFUilfLvwutK65/slJ8bbl3scjChqyvlpl1JzX7uQ
+    =0PCf
     -----END PGP PUBLIC KEY BLOCK-----
     -----BEGIN PGP PUBLIC KEY BLOCK-----
-    ...
+    
+    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
+    4PeOWgNQQMhGv8DnbAdOOOnumAXWq0+wl5uP
+    =tO+h
     -----END PGP PUBLIC KEY BLOCK-----
