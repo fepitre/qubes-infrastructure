@@ -202,6 +202,7 @@ commands-keyring:
         Host {{host}}
           HostName {{host}}
           User {{config.ssh_user}}
+          Port {{ config.get('ssh_port', 22) }}
 {% endfor %}
     - mode: 0755
     - makedirs: True

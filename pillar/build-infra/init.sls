@@ -66,7 +66,16 @@ build-infra:
 #     fedora1: {}
 #     fedora2: {}
 
-# list of remote hosts used to push packages
+# List of remote hosts used to push packages.
+# Set 'ssh_port' to reach a host on a non-22 port; the
+# qrexec call uses local.ConnectSSH+host+port and the
+# generated ~/.ssh/config carries 'Port' per host.
+# Default is port 22.
+#
+# Example:
+#   qubes.notset.fr:
+#       ssh_user: user
+#       ssh_port: 2222
   remote-hosts:
     yum.qubes-os.org:
         ssh_user: user
